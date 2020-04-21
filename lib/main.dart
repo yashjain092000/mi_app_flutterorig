@@ -17,9 +17,11 @@ class MyApp extends StatelessWidget {
               CircleAvatar(
                 backgroundImage: AssetImage('images/yash.png'),
                 radius:52.0,
+              
 
 
               )
+              ,Text("Yash Jain",style: TextStyle(color:Colors.white,fontSize: 40,fontWeight: FontWeight.bold))
 
             ],
           )
