@@ -35,44 +35,45 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2.5),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: EdgeInsets.all(10),
-              child: Row(children: <Widget>[
-                Icon(Icons.phone, color: Colors.teal, size: 18),
-                SizedBox(width: 10),
-                Text(
-                  "+91 9634777609",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'SourceSansPro',
-                    color: Colors.teal.shade900,
-                  ),
-                )
-              ]),
+                child: ListTile(
+                  leading:Icon(Icons.phone, color: Colors.teal, size: 20),
+                     title: Text(
+                      "+91 9634777609",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.teal.shade900,
+                      ),
+                    )
+                ),
+
             ),
-            Container(
+            Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                child: Row(children: <Widget>[
-                  Icon(
+                child:ListTile(
+                  leading:Icon(
                     Icons.email,
-                    size: 18,
+                    size: 20,
                     color: Colors.teal,
                   ),
-                  SizedBox(width:10),
-                  Text("yashjain092000@gmail.com",
+                    title:Text("yashjain092000@gmail.com",
                       style: TextStyle(
                         fontFamily: 'SourceSansPro',
                         fontWeight: FontWeight.bold,
                         color: Colors.teal.shade900,
                         fontSize: 20,
                       ),
-                  )
-                ]))
+                    )
+
+
+                )
+
+            )
           ],
         )),
       ),
